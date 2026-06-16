@@ -1,0 +1,184 @@
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(/Assignment/img/background2.jpg);
+}
+
+.title {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 30px;
+
+}
+
+.confirm {
+    border: 2px black solid;
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 600px;
+    height: 680px;
+    background-image: url(/Assignment/img/background2.jpg);
+    border-radius: 1%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.buyNow input[type="submit"] {
+    width: 470px; /* Increase the width for a more prominent button */
+    padding: 7px; /* Increase padding for better visual appeal */
+    font-size: 20px; /* Adjust font size for better readability */
+    display: inline-block; /* Display as inline-block for better alignment */
+    margin-top: -3px; /* Add some top margin for spacing */
+    background-color: #869786; /* Set a green background color */
+    color: rgb(255, 255, 255); /* Set text color to white */
+    border: 2px solid black; /* Remove border */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition for smoother hover effect */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.buyNow input[type="submit"]:hover {
+    background-color: #1d9caa; /* Darken the background color on hover */
+}
+
+
+
+
+.content {
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+/* Add this CSS rule to change the font family */
+
+.content label,
+.content .quantity-label {
+    font-family: "Kode Mono", monospace;
+    font-size: 19px;
+}
+
+.nameEvent {
+    Border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 2%;
+    width: 85%;
+    padding: 5px;
+}
+
+.confirm .content #nameEvent {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.timeEvent,
+.dateEvent,
+.locationEvent,
+.contantEvent,
+.priceEvent,
+.remainTicketEvent {
+    Border: none;
+    background: none;
+    outline: none;
+    font-size: 17px;
+    margin-top: 1%;
+    padding: 5px;
+}
+
+
+
+.content input {
+    margin-bottom: 4%;
+    /* Add space below each label */
+}
+
+
+
+.content .quantity-label {
+    display: inline-block;
+    width: 100px;
+    margin-top: 3%;
+}
+
+.quantity-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    /* Align to the top of the line */
+    margin-left: 10px;
+    /* Add space between the label and the add button */
+    margin-top: 3%;
+}
+
+.quantity-wrapper span {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #000000;
+    background-color: white;
+    border-radius: 5px;
+    padding: 6px 10px;
+
+    /* Adjust padding to fit the button size */
+}
+
+hr {
+    margin-top: 20px;
+    border: none;
+    border-bottom: 3px solid #d2d2d2;
+    margin-right: 13%;
+}
+
+
+
+.total-price label {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.total-price {
+    background: none;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10%;
+    padding: 5px;
+
+}
+
+.total-price input[type="text"] {
+    width: 20%;
+    /* Adjust the width as needed */
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    padding: 5px;
+    /* Add padding to the input box */
+    FONT-WEIGHT: BOLD;
+    Border: none;
+    background: none;
+    outline: none;
+}
+
+.exit{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    filter: brightness(85%);
+    margin-left:0.5%;
+    margin-top:0.3%;
+}

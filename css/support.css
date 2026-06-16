@@ -1,0 +1,40 @@
+body{
+    background-image: url("/Assignment/img/background_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.support{
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: black;
+    background-image: url("/Assignment/img/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 2%;
+    padding-right:2%;
+    border: 2px solid black;
+    box-shadow: 0px 0px 40px 5px black;
+    border-radius: 5px;
+}
+
+.navbar-container header 
+{
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 97.85%;
+}
+
+.link,
+.link2{
+    color: rgb(116, 203, 240);
+    text-decoration: none;
+}
+
+.link:hover,
+.link2:hover{
+    color: rgb(4, 137, 195);
+    text-decoration: underline;
+}

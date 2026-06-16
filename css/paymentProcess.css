@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Assignment/img/background2.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 750px;
+    height: 600px;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content:space-around;
+    border-image-slice: 1;
+}
+
+.container h1{
+    text-align: center;
+    margin-top:-5%;
+}
+
+.first-row{
+     display: flex;
+}
+
+.username{
+    width: 100%;
+    margin-right: 40px;
+}
+
+.third-row{
+    display: flex;
+}
+
+.quantity{
+   width: 20%;
+   margin-right: 65%;
+}
+
+.balance{
+    width:30%;
+}
+
+
+.input-field{
+    border: 2px solid #999;
+    margin-bottom:2%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-field input{
+    width: 100%;
+    border:none;
+    outline: none;
+    padding: 10px;
+}
+
+
+
+
+button{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    margin-top:2%;
+    width:100%;
+}
+
+button:hover{
+    background-color: dodgerblue;
+}
+
+.exit{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    filter: brightness(85%);
+    margin-left:-2.5%;
+    margin-top:-2.5%;
+}
+

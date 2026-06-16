@@ -1,0 +1,622 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/Assignment/img/background_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Kode Mono", monospace !important;
+  width: 100%;
+  height: auto;
+}
+
+
+.privacyPolicy {
+  color: #f05b5e;
+  font-weight: bold;
+}
+
+.profile_pic {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  margin-top: 0;
+  margin-left: 140px;
+  position: relative;
+}
+
+.profile_pic:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+}
+
+label.input-image {
+  display: none;
+}
+
+input#input-image {
+  display: none;
+}
+
+.profile_container {
+  display: flex;
+}
+
+.left-section {
+  flex: 2;
+  position: fixed;
+  top: 12%;
+}
+
+.right-section {
+  margin-left: 30%;
+}
+
+.balanceDiv {
+  margin-top: 20px;
+}
+
+.balanceLabel {
+  margin-left: 105px;
+  margin-right: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.accBalance {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  width: 20%;
+  font-family: "Kode Mono", monospace;
+  font-size: 18px;
+}
+
+.accBalance::placeholder {
+  color: white;
+  font-family: "Kode Mono", monospace;
+  font-size: 18px;
+}
+
+.removeAcc {
+  margin-left: 105px;
+  color: black;
+  font-family: "Kode Mono", monospace;
+  background-image: url('/Assignment/img/background2.jpg');
+  background-size: cover;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.removeAcc:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  color: #6d3939;
+}
+
+.accMan {
+  margin-left: 105px;
+  color: white;
+  margin-top: 0;
+}
+
+.profileNav {
+  margin-left: 65px;
+  list-style-type: none;
+}
+
+.profileNav li a:link {
+  text-decoration: none;
+}
+
+.profileNav a:hover {
+  filter: brightness(75%);
+}
+
+.personal {
+  border: 2px solid black;
+  box-shadow: 0px 0px 40px 5px black;
+  background-image: url('/Assignment/img/background2.jpg');
+  background-size: cover;
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.leftPersonal {
+  flex: 1.5;
+  margin-top: 0;
+  margin-left: 10px;
+  border-right: 2px solid black;
+  margin-right: 0;
+}
+
+.rightPersonal {
+  flex: 3;
+}
+
+#personalForm input,
+#accountForm input,
+#addressForm input {
+  font-size: 16px;
+  font-family: "Kode Mono", monospace;
+  border-radius: 10px;
+  border: 5px grey;
+  height: 30px;
+}
+
+.firstNameDiv {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 77%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.firstNameProfile {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.emailDiv {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.emailLabel,
+.countryLabel,
+.regisLabel,
+.phoneLabel,
+.birthLabel,
+.firstNameLabel,
+.lastNameLabel,
+.userLabel,
+.oldLabel,
+.newLabel1,
+.newLabel2,
+.line1Label,
+.line2Label,
+.postalLabel,
+.cityLabel,
+.stateLabel,
+.countryLabel {
+  margin-left: 2px;
+  margin-bottom: 0;
+  color: #646262;
+  font-size: 11px;
+}
+
+.emailProfile {
+  border: none;
+  background: none;
+  outline: none;
+  margin-top: 0;
+  width: 90%;
+  margin-left: 2px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.personal2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftPersonalRow2 {
+  flex: 2;
+  margin-right: 0;
+  padding: 0;
+}
+
+.rightPersonalRow2 {
+  flex: 1.77;
+}
+
+.countryDiv {
+  margin-bottom: 20px;
+}
+
+.regisDiv {
+  margin-top: 0;
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 235px;
+}
+
+.countryProfile {
+  margin-top: 0;
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 2px;
+}
+
+.regisDateProfile {
+  margin-top: 0;
+  width: 230px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.lastNameDiv {
+  margin-top: 0;
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 235px;
+
+}
+
+.phoneDiv,
+.birthDiv,
+.countryDiv {
+  margin-top: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 233px;
+}
+
+.lastNameProfile {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.phoneProfile {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.birthProfile {
+  border: none;
+  background: none;
+  outline: none;
+  margin-top: 0;
+  width: 230px;
+}
+
+.submitPersonal,
+.submitAccount,
+.submitAddress {
+  margin-top: 12px;
+  width: 250px;
+  height: 100px;
+  margin-left: 285px;
+  margin-bottom: 15px;
+  background-color: black;
+  color: white;
+}
+
+.submitPersonal:hover,
+.submitAccount:hover,
+.submitAddress:hover {
+  color: #bcbbbb;
+}
+
+.accountSignIn {
+  border: 2px solid black;
+  box-shadow: 0px 0px 40px 5px black;
+  background-image: url('/Assignment/img/background2.jpg');
+  background-size: cover;
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.leftAccount {
+  flex: 1.5;
+  margin-top: 0;
+  margin-left: 10px;
+  border-right: 2px solid black;
+  margin-right: 0;
+}
+
+.rightAccount {
+  flex: 3;
+}
+
+.userDiv {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 525px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.userProfile,
+.newPassProfile,
+.newPassProfile2,
+.oldPasswordProfile {
+  border: none;
+  background: none;
+  outline: none;
+  width: 500px;
+}
+
+.oldPassDiv {
+  margin-top: 0;
+}
+
+.oldPassDiv,
+.newPassDiv,
+.newPassDiv2 {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 525px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.address {
+  border: 2px solid black;
+  box-shadow: 0px 0px 40px 5px black;
+  background-image: url('/Assignment/img/background2.jpg');
+  background-size: cover;
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+.leftAddress {
+  flex: 1.5;
+  margin-top: 0;
+  margin-left: 10px;
+  border-right: 2px solid black;
+  margin-right: 0;
+}
+
+.rightAddress {
+  flex: 3;
+}
+
+.addLine1Div,
+.addLine2Div {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 525px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.addLine2Div {
+  margin-bottom: 10px;
+}
+
+.addLine1,
+.addLine2 {
+  border: none;
+  background: none;
+  outline: none;
+  width: 500px;
+}
+
+.address2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftAddRow3 {
+  flex: 2;
+  margin-right: 0;
+  padding: 0;
+}
+
+.rightAddRow3 {
+  flex: 1.77;
+}
+
+.postalDiv,
+.cityDiv {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 77%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.postalCode,
+.city {
+  border: none;
+  background: none;
+  outline: none;
+  width: 190px;
+}
+
+.stateDiv,
+.countryDiv2 {
+  margin-top: 10px;
+  margin-left: 11px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 233px;
+}
+
+.countryDiv2 {
+  margin-top: 20px;
+}
+
+.state,
+.country {
+  border: none;
+  background: none;
+  outline: none;
+  width: 200px;
+}
+
+.popUp {
+  display: none;
+  position: fixed;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+  margin-left: 36%;
+  margin-top: 0%;
+  background-image: url('/Assignment/img/background2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Kode Mono", monospace;
+  color: darkslategrey;
+  z-index: 10;
+}
+
+
+.popUpList {
+  list-style: none;
+  text-align: left;
+  margin-left: 32%;
+}
+
+.emailDeletionDiv {
+  border: 1px solid black;
+  text-align: left;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 0;
+  margin-left: 4%;
+}
+
+.btn-send-otp{
+  position: fixed;
+  top: 56.5%;
+  right: 37%;
+  border-radius: 8px;
+}
+
+.btn-send-otp:hover{
+  filter: brightness(85%);
+}
+
+.emailDeletionLabel,
+.accountDeletionPasswordLabel,
+.otpDeletionLabel {
+  margin-left: 1%;
+  margin-bottom: 0;
+  color: #646262;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.emailDeletionProfile,
+.accountDeletionPassword,
+.otpDeletionProfile {
+  border: none;
+  background: none;
+  outline: none;
+  margin-top: 0;
+  width: 90%;
+  margin-left: 0.5%;
+}
+
+.emailDeletionProfile::placeholder,
+.accountDeletionPassword::placeholder,
+.otpDeletionProfile::placeholder {
+  font-family: "Kode Mono", monospace;
+}
+
+.accountDeletionPasswordDiv,
+.otpDeletionDiv {
+  border: 1px solid black;
+  text-align: left;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 3%;
+  margin-left: 4%;
+}
+
+.AlignLeftRight {
+  display: flex;
+}
+
+.cancelDeleteButtonDiv {
+  flex: 2;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+#cancelDeleteButton {
+  border: none;
+  background: none;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Kode Mono", monospace;
+  height: 140%;
+  width: 80%;
+}
+
+.submitDeleteButtonDiv {
+  flex: 3;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+
+#submitDeleteButton {
+  border: none;
+  background: none;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Kode Mono", monospace;
+  height: 140%;
+  width: 80%;
+}
+
+#submitDeleteButton:hover,
+#cancelDeleteButton:hover {
+  color: #646262;
+  cursor: pointer;
+}
+
+.space{
+  display: none;
+}
+
+.footer{
+  background-image: none !important;
+  color: white !important;
+  border:none !important;
+}
+
+.navbar-container header{
+  width: 100%;
+}
+
+#profileButton,
+.dropdown-content{
+  margin-right: 30px;
+}
+
+#backdrop {
+  display: none;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  opacity: 0.8;
+  z-index: 1;
+}
